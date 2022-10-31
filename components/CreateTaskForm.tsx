@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { uuid } from "uuidv4";
 import { PlusIcon } from "@heroicons/react/24/outline";
+import { useState } from "react";
+import { uuid } from "uuidv4";
 type Props = {
   addTask: (task: Task) => void;
 };

@@ -1,6 +1,6 @@
 interface Task {
   title: string;
-  isCompleted: false;
+  isCompleted: boolean;
   taskId: string;
 }
 

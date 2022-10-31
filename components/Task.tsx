@@ -1,4 +1,5 @@
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
+
 type Props = {
   task: Task;
   selectTask: (task: Task) => void;
