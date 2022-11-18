@@ -23,6 +23,7 @@ export default function CreateTaskForm({ addTask }: Props) {
     <div className="flex flex-row items-center w-full">
       <input
         type="text"
+        data-cy='todo-input'
         className="outline-none px-3 py-2 flex-1 h-10 rounded-l-lg"
         placeholder="Enter text..."
         value={title}
@@ -30,6 +31,7 @@ export default function CreateTaskForm({ addTask }: Props) {
       />
       <PlusIcon
         onClick={handleClick}
+        data-cy='add-todo'
         className={`w-10 h-10 bg-white rounded-r-lg cursor-pointer hover:bg-gray-200 ${
           !!title ? "text-blue-400" : "text-gray-400"
         }`}

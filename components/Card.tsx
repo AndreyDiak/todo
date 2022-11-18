@@ -47,7 +47,7 @@ function Card({ tasks, setTasks, deleteTask }: Props) {
       <Line />
 
       {/* Tasks */}
-      <div className="flex flex-col space-y-2">
+      <div className="flex flex-col space-y-2" data-cy='todos-list'>
         {!!filtered.length ? filtered.map((task) => (
         <Task key={task.taskId} task={task} selectTask={selectTask} />
       )) : (
@@ -58,24 +58,27 @@ function Card({ tasks, setTasks, deleteTask }: Props) {
       <Line />
       {/* Menu */}
       <div className="flex flex-row justify-between">
-        <div className="text-gray-400">
+        <div className="text-gray-400" data-cy='todo-left'>
           {tasks.filter((task) => task.isCompleted === false).length} items left
         </div>
         <div className="flex flex-row space-x-2">
           <div
             onClick={() => setFilter("ALL")}
             className={`item ${filter === "ALL" && "underline"}`}
+            data-cy='todo-all'
           >
             All
           </div>
           <div
             onClick={() => setFilter("ACTIVE")}
             className={`item ${filter === "ACTIVE" && "underline"}`}
+            data-cy='todo-active'
           >
             Active
           </div>
           <div
             onClick={() => setFilter("COMPLETED")}
+            data-cy='todo-completed'
             className={`item ${filter === "COMPLETED" && "underline"}`}
           >
             Completed
@@ -84,6 +87,7 @@ function Card({ tasks, setTasks, deleteTask }: Props) {
         <div
           onClick={deleteTask}
           className={`item text-red-400 hover:text-red-600`}
+          data-cy='todo-delete'
         >
           Clear completed
         </div>
