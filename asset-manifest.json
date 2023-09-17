@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AndreyDiak/todo/static/css/main.067df9f3.css",
+    "main.js": "/AndreyDiak/todo/static/js/main.14d379ae.js",
+    "index.html": "/AndreyDiak/todo/index.html",
+    "main.067df9f3.css.map": "/AndreyDiak/todo/static/css/main.067df9f3.css.map",
+    "main.14d379ae.js.map": "/AndreyDiak/todo/static/js/main.14d379ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.067df9f3.css",
+    "static/js/main.14d379ae.js"
+  ]
+}
